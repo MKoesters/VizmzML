@@ -3,7 +3,7 @@ from flask import Blueprint, request, render_template, \
 
 Vizpymzml = Blueprint("Vizpymzml", __name__, url_prefix='/VizML')
 
-@main.route('/')
+@Vizpymzml.route('/')
 def index():
-	return render_templat('')
+	return render_template('VizpyML/index.html')
 
